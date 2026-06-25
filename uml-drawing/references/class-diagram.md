@@ -126,6 +126,12 @@ book_genre = Property(name="genre", type=genre)
 status = Property(name="genre", type=genre, default_value=genre.FICTION)
 ```
 
+> **Rendering caveat.** A plain enumeration used as an attribute type renders
+> fine through the SVG endpoint. An **enum-literal `default_value=...`** (the
+> last line above) currently makes the endpoint fail (HTTP 500) — so **omit
+> the `default_value` when you intend to render via the endpoint**. It is valid
+> B-UML and works for code generation; only the headless render path rejects it.
+
 ## Associations
 
 A `BinaryAssociation` connects two classes via two `Property` ends. Each end

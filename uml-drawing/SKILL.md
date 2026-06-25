@@ -125,6 +125,12 @@ model types (object, feature, deployment, OCL, …), see the BESSER platform's
 > *structure* — it does **not** execute it — so relationships built inside a
 > helper function or a loop are invisible: the classes import but the
 > associations silently vanish. One literal statement per relationship.
+>
+> Because the importer never runs the file, `model.validate()` is **not**
+> executed on the render path — you do not need BESSER installed to render via
+> the endpoint. Keep the `validate()` call for when you *do* have BESSER locally
+> (and before generating code); it is a no-op for the endpoint, not a
+> requirement.
 
 Where the model comes from:
 - **From a description** — write it as above.
@@ -181,6 +187,13 @@ Save it into the repo and embed:
 - The model file must be in **importable form** (see the callout in §1) — the
   same form the editor imports. Class diagrams only.
 - Layout is automatic. When the placement matters, hand-tune it with B2.
+- Save the `.py` as **UTF-8 without a BOM** — a leading byte-order mark makes
+  the endpoint reject the file (HTTP 400).
+- Omit enum-literal `default_value=...` in a model you render here — the
+  endpoint currently fails on it (HTTP 500). It is fine for code generation; a
+  plain enum used as an attribute type renders fine.
+- A non-200 response is a small JSON error, not an SVG (`{ "detail": ... }`) —
+  check the status before saving.
 
 ### B2. Hand-tuned export from the editor (when layout matters)
 
