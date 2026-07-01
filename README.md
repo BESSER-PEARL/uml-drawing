@@ -2,6 +2,8 @@
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-compatible-brightgreen)](https://agentskills.io)
+[![Release](https://img.shields.io/github/v/release/BESSER-PEARL/uml-drawing?color=orange&label=release)](https://github.com/BESSER-PEARL/uml-drawing/releases/latest)
+[![Part of BESSER Skills](https://img.shields.io/badge/part%20of-BESSER%20Skills-orange)](https://github.com/BESSER-PEARL/besser-skills)
 
 **An [Agent Skill](https://agentskills.io) that gives your AI coding agent one
 job and makes it do it right: put a correct UML class diagram — as a real
