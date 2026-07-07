@@ -5,7 +5,7 @@
 [![Release](https://img.shields.io/github/v/release/BESSER-PEARL/uml-drawing?color=orange&label=release)](https://github.com/BESSER-PEARL/uml-drawing/releases/latest)
 [![Part of BESSER Skills](https://img.shields.io/badge/part%20of-BESSER%20Skills-orange)](https://github.com/BESSER-PEARL/besser-skills)
 
-**An [Agent Skill](https://agentskills.io) that gives your AI coding agent one
+**An [Agent Skill](https://agentskills.io) by [BESSER](https://besser-pearl.org) that gives your AI coding agent one
 job and makes it do it right: put a correct UML class diagram — as a real
 embeddable image — into your docs.**
 
