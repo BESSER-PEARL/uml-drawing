@@ -30,13 +30,12 @@ Agent: ‣ reads your existing code, recovers the classes and how they relate
 
 ## Why you need it
 
-A class diagram is the fastest way to understand a system — one picture of the
-classes, their fields, and how they connect beats paragraphs of prose. An image
-is worth a thousand words, and it's the quickest way for anyone — you, a new
-teammate, or a model reading your repo — to grasp how the code fits together. So
-it's exactly the thing you want in a README or design doc.
+Models are a powerful way to quickly understand your codebase. A class diagram, for example, 
+provides a compact view of a software system by showing its classes, attributes, and relationships. 
+It is often used in documentation, README files, and design discussions because it allows developers 
+to understand the structure of a system without reading the complete source code.
 
-But ask your agent for one today and you get one of two bad outcomes:
+But when you ask an AI agent to create one, things can easily go wrong in two ways:
 
 - **A wrong diagram** — reversed arrows, invalid multiplicities, inheritance
   backwards. It looks fine until someone who knows the domain reads it.
