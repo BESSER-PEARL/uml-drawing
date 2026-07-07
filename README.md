@@ -9,19 +9,24 @@
 job and makes it do it right: put a correct UML class diagram — as a real,
 rendered image — into your docs.**
 
-With the skill installed, one request is all it takes:
+With the skill installed, one request is all it takes — describe the domain, or
+point the agent at code you already have:
 
 ```text
 You:   "Add a class diagram of our vehicle fleet to the README."
 Agent: ‣ models Vehicle · Car · Truck · ElectricCar with correct inheritance
        ‣ renders it to a real SVG itself — one call, no browser
        ‣ embeds  ![Vehicle fleet](examples/vehicles.svg)
+
+You:   "Diagram the classes in src/fleet/ for the docs."
+Agent: ‣ reads your existing code, recovers the classes and how they relate
+       ‣ builds the same validated B-UML model and renders the SVG
 ```
 
 <p align="center">
   <img src="examples/vehicles.svg" alt="UML class diagram rendered from B-UML by the uml-drawing skill" width="430">
 </p>
-<p align="center"><sub>The agent's actual output for that request — rendered from <a href="examples/vehicles.py"><code>examples/vehicles.py</code></a> in a single call, no browser or plugin. That's the skill at work.</sub></p>
+<p align="center"><sub>The agent's actual output — rendered from <a href="examples/vehicles.py"><code>examples/vehicles.py</code></a> in a single call, no browser or plugin. Whether you describe the model or the agent reads it from your own source, the diagram comes from real, validated code — never a freehand guess. That's the skill at work.</sub></p>
 
 ## Why you need it
 
